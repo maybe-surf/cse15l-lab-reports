@@ -28,3 +28,4 @@ For the purpose of this lab we will be working with the terminal. If it is not t
 ## Trying Some Commands
 Below is a demonstration of some basic commands such as `ls -lat` and `ls -a`. When done with the session, type `exit` in the command line.
 ![Image](cmd.png)
+The commands above are now running on the remote server rather than on your machine. If the task involves working on several processes simultaneously you can open more terminals using the plus button at the top of the terminal window.

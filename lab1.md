@@ -10,9 +10,9 @@ For the purpose of this lab we will be working with the terminal. If it is not t
 ## Remotely connecting
 
 * In order to connect to a remote server, we first need to install [Git](https://gitforwindows.org/).
-* After succesfully installing Git we can switch to Bash terminal in VSCode. To do so, press 'Ctrl + Shift + P' in VSCode and then select 'Terminal: Select Default Profile'
+* After succesfully installing Git we can switch to Bash terminal in VSCode. To do so, press `Ctrl + Shift + P` in VSCode and then select `Terminal: Select Default Profile`
 ![Image](Bash.png)
-* The next step is to connect to the UCSD remote server used for this class. The command for that is 'ssh cs15lwi23zz@ieng6.ucsd.edu' where zz should be replaced with the letters in your course-specific account (not to be confused with your ucsd email). If everything worked properly, your the terminal should look something like this:
+* The next step is to connect to the UCSD remote server used for this class. The command for that is `ssh cs15lwi23zz@ieng6.ucsd.edu` where zz should be replaced with the letters in your course-specific account (not to be confused with your ucsd email). If everything worked properly, your the terminal should look something like this:
 * ![Image](Remote.png)
 
 <details><summary>Possible issues</summary>
@@ -26,5 +26,5 @@ For the purpose of this lab we will be working with the terminal. If it is not t
 </details>
 
 ## Trying Some Commands
-Below is a demonstration of some basic commands such as 'ls -lat' and 'ls -a'. When done with the session, type 'exit' in the command line.
+Below is a demonstration of some basic commands such as `ls -lat` and `ls -a`. When done with the session, type `exit` in the command line.
 ![Image](cmd.png)

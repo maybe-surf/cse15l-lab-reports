@@ -32,5 +32,7 @@ Below is the summary of some of the essential git commands we have covered in th
 * `ls` lists files under the current directory.
 * `ls -lat` looked like it sorted the files in the directory with respect to time
 * `ls -a` simply prints out the files and folders under current directory, including the hidden files
+* `cp` copies given file into the current directory
+* `cat` can be used to access content of a text file
 ![Image](cmd.png)
 The commands above are now running on the remote server rather than on your machine. If the task involves working on several processes simultaneously you can open more terminals using the plus button at the top of the terminal window.

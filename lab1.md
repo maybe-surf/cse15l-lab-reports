@@ -27,5 +27,10 @@ For the purpose of this lab we will be working with the terminal. If it is not t
 
 ## Trying Some Commands
 Below is a demonstration of some basic commands such as `ls -lat` and `ls -a`. When done with the session, type `exit` in the command line.
+Below is the summary of some of the essential git commands we have covered in the lab:
+* `cd` with a valid path as an argument changes the current directory, while `cd ~` changes to the current home directory.
+* `ls` lists files under the current directory.
+* `ls -lat` looked like it sorted the files in the directory with respect to time
+* `ls -a` simply prints out the files and folders under current directory, including the hidden files
 ![Image](cmd.png)
 The commands above are now running on the remote server rather than on your machine. If the task involves working on several processes simultaneously you can open more terminals using the plus button at the top of the terminal window.

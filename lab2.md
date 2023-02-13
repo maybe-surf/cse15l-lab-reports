@@ -29,11 +29,11 @@ Failure inducing input:
 Input that doesn't induce failure:
 ```
 @Test 
-	public void testReverseInPlace() {
+public void testReverseInPlace() {
     int[] input1 = { 3 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
-	}
+}
  ```
 Test output:
 ![Image](sym1.png) 

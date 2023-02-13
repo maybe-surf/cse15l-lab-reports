@@ -10,10 +10,55 @@ For the server above I modified the code we were given in the wavelet repo durin
 
 Below is the example of how the webpage looks like on localhost
 ![Image](two.png)
+Below are the examples of using /add-message:
+![Image](mes1.png)
+![Image](mes2.png)
+* For the first screenshot, it uses the method `handleRequest()` which in turn invokes `getQuery()` and updates the datafield `message`. In the `handleRequest()` method the argument is the url from screenshot and the part of URL after `=` (Hello) obtained using `split()` method. It is added to `parameters` array and then to `message` datafield.
+* For the second screenshot, it uses the method `handleRequest()` which in turn invokes `getQuery()` and updates the datafield `message`. In the `handleRequest()` method the argument is the url from screenshot and the part of URL after `=` (How are you) obtained using `split()` method. It is added to `parameters` array and then to `message` datafield.
 
-## Part 2
-![Image](fr.png)
-![Image](fv.png)
+## Part 2 (`ReverseInPlace()`)
+Failure inducing input:
+```
+@Test
+  public void testReverseInPlace2(){
+    int[] inp = {1, 2, 3};
+    ArrayExamples.reverseInPlace(inp);
+    assertArrayEquals(new int[]{3, 2, 1}, inp);
+  }
+```
+Input that doesn't induce failure:
+```
+@Test 
+	public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}
+ ```
+Test output:
+![Image](sym1.png) 
+
+Code before fix:
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+After fix:
+```
+static void reverseInPlace(int[] arr) {
+    int bp = arr.length / 2;
+    for(int i = 0; i <= bp; i += 1) {
+      int temp = arr[arr.length - 1 - i];
+      arr[arr.length - 1 - i] = arr[i];
+      arr[i] = temp;
+    }
+  }
+```
+The method used here to reverse the array can be visually described as reflecting it around the midpoint. However, the code in the initial implementation doesn't take into account the fact that the for-loop needs to stop half-way through. The new implementation fixes that issue by introducing a breakpoint halfway through the array. 
+
 
 ## Part 3
 In the past two weeks the major new thing that I learned were webservers and ways to manipulate them using java on both local host and remote server. So far, I only new how to run programs in terminal and get outpur there. With servers, especially when you run them on a remote server, I feel like I have more opportunities available to me. Another useful thing I learned is using Github Desktop and basic github commands suh as `clone` or `push`. 

@@ -42,3 +42,7 @@ Counts how many times the string appears in the file
 screenshots for color. Highlights the given string.
 ![Image](col1.png)
 ![Image](col2.png)
+
+Resources:
+* https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
+* https://man7.org/linux/man-pages/man1/grep.1.html
